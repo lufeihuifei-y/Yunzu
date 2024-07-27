@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订购</title>
+		<link href="template.css" rel="stylesheet" />
+		<style>
+		#shou {
+			height: 200px;
+			width: 490px;
+		
+			margin-left: 100px;
+			text-align: left;
+			margin-top: 40px;
+		}
+		
+		#pei {
+			margin-left: 100px;
+			text-align: left;
+			margin-top: 40px;
+		}
+		
+		#zhi {
+			margin-left: 100px;
+			text-align: left;
+			margin-top: 40px;
+		}
+		
+		#que {
+			margin-left: 100px;
+			margin-bottom: 40px;
+		}
+		
+		#d1 {
+			background: #ffffff center/cover;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			margin: 50px 100px 10px 100px;
+		}
+		
+		span {
+			font-size: 1px;
+			font-family: "楷体";
+		}
+		
+		
+		#a1 {
+			width: 800px;
+		}
+		
+		#a2 {
+			width: 300px;
+		}
+		
+		#c3 {
+			line-height: 30px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- top -->
+		<div class="top">
+			<div class="center">
+				<img src="../../image/logo4.png" class="logo"/>
+			<div class="other">
+				<div class="ss">
+					<input type="text" placeholder="  请输入搜索名称" />
+				</div>
+				<div class="a1">
+					<a href="关于我们.html">元祖门店</a>
+					<a href="订购.html">购物车</a>
+					<a href="售后服务.html">帮助中心</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav">
+			<div class="center">
+				<div class="nav-itme">
+					<a href="首页.html">首页</a>
+				</div>
+				<div class="nav-itme">
+					<a href="系列页面.html">蛋糕系列</a>
+						<ul>
+							<li><a href="蛋糕系列.html">新品系列</a></li>
+							<li><a href="蛋糕系列.html">经典系列</a></li>
+							<li><a href="蛋糕系列.html">星座系列</a></li>
+							<li><a href="蛋糕系列.html">儿童系列</a></li>
+						</ul>
+				</div>
+				<div class="nav-itme">
+					<a href="#">零食糕点</a>
+					<ul>
+						<li><a href="零食糕点.html">芝士糕点</a></li>
+						<li><a href="零食糕点.html">精品礼盒</a></li>
+					</ul>
+				</div>
+				<div class="nav-itme">
+					<a href="会员升级.html">会员中心</a>
+					<ul>
+						<li><a href="登录注册.html">登录/注册</a></li>
+						<li><a href="会员升级.html">会员升级</a></li>
+					</ul>
+				</div>
+				<div class="nav-itme">
+					<a href="关于我们.html">关于我们</a>
+					<ul>
+						<li>蛋糕起源</li>
+						<li>制作过程</li>
+					</ul>
+				</div>
+				<div class="nav-itme">
+					<a href="服务业.html">服务业</a>
+					<ul>
+						<li><a href="服务业.html">元祖卡券</a></li>
+						<li><a href="服务业.html">订单配餐</a></li>
+					</ul>
+				</div>
+				<div class="nav-itme">
+					<a href="博客页面.html">博客</a>
+				</div>
+				<div class="nav-itme">
+					<a href="联系我们.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		<div id="d1">
+			<!-- <img src="logo2%20(2).png"> -->
+			<h4>1.收货信息</h4>
+			<hr>
+			<div id="shou">
+				<table id="c3">
+					<tr>
+						<td>收货人姓名：</td>
+						<td><input type="text" /></td>
+						<td><span>*收货人姓名</span></td>
+					</tr>
+					<tr>
+						<td>收货地址：</td>
+						<td><select id="province" onchange="myChange()"></select>
+							<select id="cities"></select>
+						</td>
+						<td><span>*收货人详细地址</span></td>
+					</tr>
+					<tr>
+						<td>邮政编码：</td>
+						<td><input type="text" /></td>
+						<td><span> *所在地区的邮政编码，非必填</span></td>
+					</tr>
+					<tr>
+						<td>手机号码：</td>
+						<td><input type="text" /></td>
+						<td><span>*收货人的手机号码</span></td>
+					</tr>
+					<tr>
+						<td>商品备注：</td>
+						<td><input type="text" /></td>
+						<td><span>*必填，例如：留言卡片内容</span></td>
+					</tr>
+				</table>
+			</div>
+			<h4>2.支付方式</h4>
+			<hr>
+			<div id="zhi">
+				<table id="a1">
+					<tr>
+						<td><input type="radio" name="s1" />货到付款<span>手续费：0.00</span></td>
+						<td><input type="radio" name="s1" />余额支付<span>手续费：0.00</span></td>
+						<td><input type="radio" name="s1" />支付宝<span>手续费：0.00</span></td>
+						<td><input type="radio" name="s1" />微信<span>手续费：0.00</span></td>
+					</tr>
+				</table>
+			</div>
+			<h4>3.配送方式</h4>
+			<hr>
+			<div id="pei">
+				<table id="a2">
+					<tr>
+						<td><input type="radio" name="s2" />顺丰快递</td>
+						<td><input type="radio" name="s2" />京东快递</td>
+					</tr>
+				</table>
+			</div>
+			<h4>4.确认提交</h4>
+			<hr>
+			<div id="que">
+				<button type="button">确认提交</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//数组怎么写?
+			//类型不限制
+			//长度不限制
+			//数组可以是字符串
+			var provinces = []
+			//城市
+			provinces["黑龙江省"] = ["哈尔滨", "鸡西", "大庆"]
+			provinces["湖南省"] = ["长沙", "怀化", "永州"]
+			provinces["广西省"] = ["南宁", "柳州"]
+		
+		
+			//省份怎么来
+			//  for of 相当于foreach 遍历元素
+			//  for in 遍历下标
+			for (let i in provinces) {
+				//往省份的下拉框中添加选项
+				//<option value="i">i</option>
+				province.appendChild(new Option(i, i))
+			}
+		
+			//城市里面放谁?
+			function setCity(name) {
+				for (let i of provinces[name]) {
+					cities.appendChild(new Option(i, i))
+				}
+			}
+		
+			setCity(province.value)
+		
+			function myChange() {
+				//清空原来的选项
+				cities.innerHTML = ""
+				//输入框 和 下拉框
+				setCity(province.value)
+			}
+		
+			var b = 1;
+			//箭头函数
+			setInterval(() => {
+				//操作元素（html）的css
+				d1.style.backgroundImage = 'url("img/z' + (b % 5) + '.png")'
+				b++;
+			}, 1000)
+		</script>
+		<!-- 底部栏 -->
+		<div class="bottom">
+			<div class="aa">
+					<a href="首页.html">订购指南</a>
+					<a href="订购.html">订购流程</a>
+					<a href="系列页面.html">订购方式</a>
+					<a href="服务业.html">元祖服务</a>
+					<a href="服务业.html">元祖宅配</a>
+					<a href="售后服务.html">售后服务</a>
+					<a href="关于我们.html">关于我们</a>
+					<a href="会员升级.html">会员升级</a>
+					<a href="联系我们.html">联系我们</a>
+			</div>
+			<br>
+			<div class="p">
+				<p> 版权所有 @ 2015 上海元祖梦果子股份有限公司 沪ICP备17013537号 <img src="../../image/copy_rignt_24.png"></p>
+				<p>全国客服热线：400-110-3737（服务时间：8:00-21:00）</p>
+				<p>全国团购业务合作：021-59755678-6668</p>
+				<p>元祖官方邮箱:info@yuanzu.com</p>
+				<p>元祖总部：021-59755678</p>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
